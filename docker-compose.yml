@@ -36,12 +36,12 @@ services:
     front:
         build:
             context: .
-            dockerfile: ./infra/Dockerfile.front
+            dockerfile: ./infra/DockerFile.ft
         volumes: 
-            - ./front:/app
+            - ./front/my-app:/app
         ports: 
             - 3000:3000
-        command: "yarn dev"
+        command: "yarn start"
 
 volumes: 
     db-data:
